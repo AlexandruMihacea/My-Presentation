@@ -1,4 +1,4 @@
-.App{
+.App {
   min-height: 100vh;
   background: rgb(238, 200, 128);
   display: flex;
@@ -13,7 +13,16 @@
   margin-left: -100px;
 }
 
-.btnOne{
+.btnOne {
+  position: fixed;
+  display: flex;
+  top: 65%;
+  left: 40%;
+  margin-top: -50px;
+  margin-left: -20px;
+}
+
+.slideOne {
   position: fixed;
   top: 65%;
   left: 50%;
@@ -21,25 +30,23 @@
   margin-left: -20px;
 }
 
-.slideOne{
+.Meniu {
   position: fixed;
-  top: 65%;
-  left: 50%;
+  top: 20%;
+  left: 10%;
   margin-top: -50px;
   margin-left: -20px;
 }
 
-.Meniu{
+.MeniuTwo {
   position: fixed;
-  top: 80%;
-  left: 44%;
+  top: 20%;
+  left: 40%;
   margin-top: -50px;
   margin-left: -20px;
-  
 }
 
-
-.tweet{
+.tweet {
   height: 200px;
   width: 250px;
   background: white;
@@ -50,12 +57,9 @@
   align-items: center;
 }
 
-.SecondPart{
+.SecondPart {
   display: flex;
-  
+
   margin-top: 1000px;
   margin-left: 100px;
 }
-
-
-

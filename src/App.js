@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 import Typography from "@material-ui/core/Typography";
 import Home from './Typing';
 import Switches from './Slider';
-import ContainedButtons from './Meniu';
+// import ContainedButtons from './Meniu';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import MyChart from './Chart';
-import MediaCard from './Cards';
-import Tweet from './Tweek';
+import OutlinedCard from './FirstCard';
+import ControlledCarousel from './SecondCard'
+
 
 
 
@@ -25,31 +25,58 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const [show, setShow] = useState(false);
+  const [showTwo, setShowTwo] = useState(false);
+  const changeShow = () => {
+    setShow(!show);
+  }
+  const changeShowTwo = () => {
+    setShowTwo(!showTwo);
+  }
   const classes = useStyles();
 
   return (
     <div className="App">
-      <div>
+      
         <Typography variant="h5" align="center">
         <Home />
         </Typography>
 
         <div className="Meniu">
           {
-          show ? <ContainedButtons /> : null
+          show ? <OutlinedCard /> : null
+          }
+       </div>
+      
+
+        <div className="MeniuTwo">
+          {
+          showTwo ? <ControlledCarousel /> : null
           }
         </div>
 
+        
         <div className="btnOne">
               <div className={classes.root}>
+                  <Button onClick={changeShow} variant="contained" size="large" color="blue" className={classes.margin} >
+                      Studies
+                  </Button>
+              </div>
+              <div className={classes.root}>
+                        <Button onClick={changeShowTwo} variant="contained" size="large" color="blue" className={classes.margin} >
+                            Hobies
+                        </Button>
+              </div>
+              <div className={classes.root}>
                   <Button onClick={() => setShow(true)} variant="contained" size="large" color="blue" className={classes.margin} >
-                      Alex
+                      Others
                   </Button>
               </div>
         </div>
-      </div>
 
-      </div>
+
+      
+
+    </div>
 
 
   
