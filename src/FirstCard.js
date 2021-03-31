@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function OutlinedCard() {
+export default function OutlinedCard(props) {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -31,19 +31,25 @@ export default function OutlinedCard() {
     <Card className={classes.root} variant="outlined">
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Liceul Teoretic "Traian" Constanta
+          {props.first}
         </Typography>
         <Typography variant="h5" component="h2">
-          Student Universitatea Maritima Constanta
+          {props.second}
+        </Typography>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          {props.third}
+        </Typography>
+        <Typography variant="h5" component="h2">
+         {props.four}
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-            Electromecanica Navala
+          {props.five}
         </Typography>
         <Typography variant="h5" component="h2">
-          Student Academia De Studii Economice
+          {props.six}
         </Typography>
         <Typography variant="body2" component="p">
-          Informatica Economica
+          
           <br />
           {''}
         </Typography>

@@ -3,11 +3,10 @@ import React, { useState } from 'react';
 import Typography from "@material-ui/core/Typography";
 import Home from './Typing';
 import Switches from './Slider';
-// import ContainedButtons from './Meniu';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import OutlinedCard from './FirstCard';
-import ControlledCarousel from './SecondCard'
+import ImgMediaCard from './SecondCard'
 import MediaCard from './ThirdCard';
 
 
@@ -44,21 +43,23 @@ function App() {
 
   return (
     <div className="App">
+        <div className="type">
+          <Typography variant="h5" align="center">
+          <Home />
+          </Typography>
+      </div>
       
-        <Typography variant="h5" align="center">
-        <Home />
-        </Typography>
-
         <div className="ModalOne">
           {
-          show ? <OutlinedCard /> : null
+          show ? <OutlinedCard first="Highschool" second="Liceul Teoretic Traian" third="First University" four="Universitatea Maritima Constanta(Electromecanica Navala)"
+          five="Second University" six="Student Academia De Studii Economice(Informatica Economica)"/> : null
           }
        </div>
       
 
         <div className="ModalTwo">
           {
-          showTwo ? <ControlledCarousel /> : null
+          showTwo ? <> <ImgMediaCard /> </>: null
           }
         </div>
 

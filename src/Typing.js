@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import 'fontsource-roboto';
-const words = ["Hello", "My name is Alex" , "and if you want to know me","Click here ! "];
+const words = ["Hello", "My name is Alex" , "And if you want to know me", "Click here ! "];
 
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
 
     const timeout = setTimeout(() => {
       setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 :
+    }, Math.max(reverse ? 30 : subIndex === words[index].length ? 500 :
                 150, parseInt(Math.random() * 350)));
 
     return () => clearTimeout(timeout);

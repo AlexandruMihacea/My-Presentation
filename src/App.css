@@ -2,6 +2,7 @@
   min-height: 100vh;
   background: rgb(238, 200, 128);
   display: flex;
+  background-image: url('./background-2426328_1920.jpg');
 }
 
 .firstHeader {
@@ -11,6 +12,7 @@
   left: 50%;
   margin-top: -50px;
   margin-left: -100px;
+  color: #39ff14;
 }
 
 .btn {
@@ -18,8 +20,8 @@
   display: flex;
   top: 65%;
   left: 40%;
-  margin-top: -50px;
-  margin-left: -20px;
+  margin-top: -40px;
+  /* margin-left: 10px; */
 }
 
 .slideOne {
@@ -36,13 +38,15 @@
   left: 10%;
   margin-top: -50px;
   margin-left: -20px;
+  border: solid 10px black;
+  border-radius: 10px;
 }
 
 .ModalTwo {
   position: fixed;
   top: 20%;
   left: 40%;
-  margin-top: -50px;
+  margin-top: -120px;
   margin-left: -20px;
 }
 
@@ -70,4 +74,24 @@
 
   margin-top: 1000px;
   margin-left: 100px;
+}
+.Photo{
+  display: flex;
+  margin-left: -70px;
+}
+
+.PhotoOne{
+  border-radius: 20%;
+  border: solid 10px black;
+  margin-right: 40px;
+}
+
+.PhotoTwo{
+  border-radius: 20%;
+  border: solid 10px white;
+  margin-right: 40px;
+}
+
+.text{
+  color: #39ff14;
 }
