@@ -47,10 +47,10 @@ export default function OutlinedCard() {
           <br />
           {''}
         </Typography>
+       
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+      
+    
     </Card>
   );
 }

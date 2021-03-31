@@ -8,6 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import OutlinedCard from './FirstCard';
 import ControlledCarousel from './SecondCard'
+import MediaCard from './ThirdCard';
 
 
 
@@ -18,20 +19,27 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
     },
   },
-}));
-
-
+}))
 
 
 function App() {
+
   const [show, setShow] = useState(false);
   const [showTwo, setShowTwo] = useState(false);
+  const [showThree, setShowThree] = useState(false);
+  
   const changeShow = () => {
     setShow(!show);
   }
+
   const changeShowTwo = () => {
     setShowTwo(!showTwo);
   }
+
+  const changeShowThree = () => {
+    setShowThree(!showThree);
+  }
+
   const classes = useStyles();
 
   return (
@@ -41,25 +49,30 @@ function App() {
         <Home />
         </Typography>
 
-        <div className="Meniu">
+        <div className="ModalOne">
           {
           show ? <OutlinedCard /> : null
           }
        </div>
       
 
-        <div className="MeniuTwo">
+        <div className="ModalTwo">
           {
           showTwo ? <ControlledCarousel /> : null
           }
         </div>
 
+        <div className="ModalThree">
+          {
+          showThree ? <MediaCard /> : null
+          }
+        </div>
         
-        <div className="btnOne">
+        <div className="btn">
               <div className={classes.root}>
-                  <Button onClick={changeShow} variant="contained" size="large" color="blue" className={classes.margin} >
-                      Studies
-                  </Button>
+                        <Button onClick={changeShow} variant="contained" size="large" color="blue" className={classes.margin} >
+                            Studies
+                        </Button>
               </div>
               <div className={classes.root}>
                         <Button onClick={changeShowTwo} variant="contained" size="large" color="blue" className={classes.margin} >
@@ -67,9 +80,9 @@ function App() {
                         </Button>
               </div>
               <div className={classes.root}>
-                  <Button onClick={() => setShow(true)} variant="contained" size="large" color="blue" className={classes.margin} >
-                      Others
-                  </Button>
+                        <Button onClick={changeShowThree} variant="contained" size="large" color="blue" className={classes.margin} >
+                            GitHub
+                        </Button>
               </div>
         </div>
 

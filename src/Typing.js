@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import 'fontsource-roboto';
-const words = ["Hello", "My name is Alexandru" , "and if you want to know me","Click here ! "];
+const words = ["Hello", "My name is Alex" , "and if you want to know me","Click here ! "];
 
 
 export default function Home() {
