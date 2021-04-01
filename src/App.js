@@ -2,7 +2,6 @@ import './App.css';
 import React, { useState } from 'react';
 import Typography from "@material-ui/core/Typography";
 import Home from './Typing';
-import Switches from './Slider';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import OutlinedCard from './FirstCard';
@@ -119,7 +118,7 @@ function App() {
               <EqualizerIcon></EqualizerIcon>
                         </Button>
           </div>
-      </div>
+        </div>
       
 
       
