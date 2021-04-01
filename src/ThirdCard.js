@@ -7,11 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Avatar from "@material-ui/core/Avatar";
-import List from "@material-ui/core/List";
-import ListItemAvatar from "@material-ui/core/ListItemAvatar";
-import ListItemText from "@material-ui/core/ListItemText";
-import Divider from "@material-ui/core/Divider";
+
 
 
 const useStyles = makeStyles({
@@ -29,9 +25,9 @@ export default function MediaCard() {
     const [name, setName] = useState('');
     const [userName, setUsername] = useState('');
     const [avatar, setAvatar] = useState('');
-  const [link, setLink] = useState('');
-  const [follow, setFollow] = useState('');
-    const [error, serError] = useState(null);
+    const [link, setLink] = useState('');
+    const [follow, setFollow] = useState('');
+   
   
 
     useEffect( () => {
@@ -51,6 +47,7 @@ export default function MediaCard() {
 
 
   return (
+    <div className="thirdCard">
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -77,6 +74,7 @@ export default function MediaCard() {
           My GitHub
         </Button>
       </CardActions>
-    </Card>
+      </Card>
+      </div>
   );
 }

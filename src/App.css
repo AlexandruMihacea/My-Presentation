@@ -26,8 +26,8 @@
 
 .slideOne {
   position: fixed;
-  top: 65%;
-  left: 50%;
+  top: 80%;
+  left: 48.5%;
   margin-top: -50px;
   margin-left: -20px;
 }
@@ -47,7 +47,7 @@
   top: 20%;
   left: 40%;
   margin-top: -120px;
-  margin-left: -20px;
+  margin-left: -110px;
 }
 
 .ModalThree{
@@ -55,7 +55,7 @@
   top: 20%;
   left: 60%;
   margin-top: -50px;
-  margin-left: -20px;
+  margin-left: 10px;
 }
 
 .tweet {
@@ -81,17 +81,30 @@
 }
 
 .PhotoOne{
-  border-radius: 20%;
+  border-radius: 10%;
   border: solid 10px black;
   margin-right: 40px;
 }
 
 .PhotoTwo{
-  border-radius: 20%;
+  border-radius: 10%;
   border: solid 10px white;
   margin-right: 40px;
 }
 
 .text{
   color: #39ff14;
+}
+
+.thirdCard{
+  border-radius: 10%;
+  border: solid 10px white;
+}
+
+.grafic{
+    position: fixed;
+    display: flex;
+    top: 72%;
+    left: 38%;
+    margin-top: -40px;
 }
