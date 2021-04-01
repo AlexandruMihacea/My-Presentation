@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import 'fontsource-roboto';
+
+
 const words = ["Hello !", "My name is Alex" , "And if you want to know me", "Click here ! "];
 
 
